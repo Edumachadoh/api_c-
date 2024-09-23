@@ -1,0 +1,22 @@
+
+### testar a primeira funcionalidade
+GET http://localhost:5272
+
+### Listar produtos
+GET http://localhost:5272/produto/listar
+
+### Buscar produto 
+GET http://localhost:5272/produto/buscar/FantaBeetleJuice
+
+### Deletar produto
+DELETE http://localhost:5272/produto/deletar/FantaBeetleJuice
+
+### Cadastrar produtos
+POST http://localhost:5272/produto/cadastrar
+Content-Type: application/json
+
+{
+    "nome" : "Bolaxa",
+    "preco" : 4.78,
+    "quantidade" : 55
+}
